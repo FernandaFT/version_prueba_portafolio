@@ -1,0 +1,95 @@
+section.firstColor_mySkills.color {
+  background-color: $secondary-color-lavernder;
+}
+section.secondColor_mySkills.color {
+  background-color: $terciary-color-lightGray;
+
+}
+section.thirdColor_mySkills.color {
+  background-color: $primary-color-lightGreen;
+}
+.blogImage {
+    position: absolute;
+}
+.blogI {
+  position: relative;
+  width: 52px;
+}
+.codeImage {
+  left: 26px;
+}
+.sotfImage {
+  left: 13px;
+}
+.designImage {
+  left: 13px;
+}
+
+.color-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 10em;  
+  
+  /* Handles any clipping/overflow issues on transition */
+  // overflow: hidden;
+  padding: 1em;
+  color: black;
+  transition: flex-basis 500ms ease-in-out;
+}
+
+.color:hover {
+  /*
+    Change the flex-basis so that we know what
+    size to transition to on hover. Arbitrary,
+    based on our design/content.
+  */
+  flex-basis: 21em;
+}
+
+.color:hover .details {
+  opacity: 1;
+}
+
+.name_mySkills {
+  text-align: center;
+  text-transform: uppercase;
+  font: $font-family-base-medium-weight 1em $font-family-base;
+  margin-top: 0;
+}
+.details {
+  text-align: center;
+  color: #696969;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  // opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.details li {
+  font:$font-family-base-light-weight 0.9em $font-family-base;
+  text-transform: capitalize;
+  line-height: 2em;
+}
+
+@media (min-width: 600px) {
+  .color-list {
+    /*
+      Change the direction so that each .color
+      aligns horizontally
+    */
+    flex-direction: row;
+  }
+  
+  .color {
+    /*
+      No scrollbars on mobile
+    */
+    flex-shrink: 1;
+  }
+}

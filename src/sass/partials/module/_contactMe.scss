@@ -1,0 +1,32 @@
+h4 {
+    font:$font-family-base-regular-weight 1em $font-family-base;
+}
+.myContact {
+    margin-top: 5em;
+    padding: 70px 30px 70px;
+}
+.container_myContact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.container_myContact{
+    margin: 0 auto;
+    max-width: 600px;
+}
+.email .location {
+    text-align: left;
+}
+.contact_myContact {
+    font:$font-family-base-light-weight 1em $font-family-base;
+}
+
+@media only screen and (max-width: 500px) {
+    .container_myContact{
+        display: block;
+        text-align: -webkit-center;
+    }
+    .contact_myContact {
+        text-align: center;
+    }
+}

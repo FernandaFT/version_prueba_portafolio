@@ -1,0 +1,78 @@
+h2 {
+    text-transform: uppercase;
+    font: $font-family-base-medium-weight 2em $font-family-base;
+    text-align: center;
+}
+.colorBlock_aboutMe {
+    position: relative;
+    width: 40%;
+    background-color: $secondary-color-lavernder;
+    margin: 0 auto;
+    height: 380px;
+}
+.supportImg_aboutMe {
+    position: absolute;
+    width: 145%;
+    margin: 0 auto;
+    right: 27%;
+    top: 10%;
+    left: -101px;
+}
+.info_aboutMe {
+    width: 80%;
+    margin: 0 auto;
+}
+.text_aboutMe {
+    font: $font-family-base-light-weight 1em $font-family-base;
+    text-align: center;
+}
+
+/*************************  Responsive About Me ****************************/
+
+@media screen and (max-width: 768px){
+    .colorBlock_aboutMe {
+        height: 265px;
+    }
+    .supportImg_aboutMe {
+        left: -71px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .colorBlock_aboutMe {
+        height: 146px;
+    }
+    .supportImg_aboutMe {
+    left: -37px;
+    }
+    .text_aboutMe {
+        font-size: 0.7em;
+    }
+    .link_aboutMe {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .colorBlock_aboutMe {
+        height: 112px; 
+    }
+}
+
+// .padre {
+//     position: relative;
+//     width: 90%;
+//     background-color:red;
+//     margin: 0 auto;
+// }
+
+// .hijo1 {
+//     position: absolute;
+//     background-color: green;
+//     width: 60%;
+//     margin: 0 auto;
+//     height: 100px;
+//     /* z-index: auto; */
+//     /* float: left; */
+//     left: 20%;
+// }

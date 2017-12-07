@@ -1,0 +1,39 @@
+//
+// Base definitions
+* {
+  -webkit-box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+}
+header{
+  background: url(../../images/bg.jpg) ;
+  margin: auto; 
+  background-size: contain;   
+  margin-bottom: 10em;
+}
+footer{
+  background: url(../../images/bg_footer.jpg);
+  margin: auto; 
+  background-size: contain; 
+}
+p {
+  text-align: justify;
+}
+img {
+  width: inherit;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+
+// Responsive images
+.myPhoto {
+  width: inherit; // IE8
+  max-width: 100%;
+  height: auto;
+}

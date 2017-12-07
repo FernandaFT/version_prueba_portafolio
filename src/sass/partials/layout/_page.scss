@@ -1,0 +1,48 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.bg_Color {
+    background-color: $primary-color-lightGreen;
+    padding: 0.08em;
+}
+.bg_ColorContact{
+  background-color: $secondary-color-lavernder;
+  padding: 0.3em;
+  width: 121px;
+}
+
+.font_list {
+    font: $font-family-base-regular-weight 1em $font-family-base;
+    text-transform: capitalize;
+    line-height:30px;
+}
+
+.toTop {
+    border: 2px solid #a9a9a9;
+    cursor:pointer;
+    text-decoration: none;
+    color:#a9a9a9;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 59px;
+    font-size: 44px;
+    font-family: Times New Roman;
+    bottom: 30px;
+    right: 30px;
+}
+.toTop:hover {
+  color: $secondary-color-lavernder;
+  border: 2px solid $primary-color-lightGreen;
+}
+.toTop {
+  position:fixed;
+  bottom:5px;
+  right:5px;
+  cursor:pointer;
+}

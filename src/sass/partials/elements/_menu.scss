@@ -1,0 +1,150 @@
+// Logo and branding
+.brand {
+  position: absolute;
+  padding-left: 5px;
+  float: left;
+  .anchor_menu,
+  .anchor_menu:visited {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+// Container with no padding for navbar
+.nav_container {
+  position: relative;
+  margin: 0 auto;
+}
+
+// Navigation 
+.menu {
+  float: right;
+  .ul_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .animation_li {
+      float: left;
+      position: relative;
+      .anchor_menu,
+      .anchor_menu:visited {
+        text-align: right;
+        display: block;
+        padding: 0 20px;
+        line-height: $nav-height;
+        color: #000;
+        text-decoration: none;
+        &:hover {
+          background: $secondary-color-lavernder;
+          color: #000;
+        }
+        &:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ▾';
+        }
+      } // Dropdown list
+      .ul_list .animation_li {
+        min-width: 190px;
+        .anchor_menu {
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+    
+.li_name{
+    font: $font-family-base-light-weight 20px $font-family-base;
+}
+// Dropdown list binds to JS toggle event
+.nav_dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav_mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  // background: $primary-color;
+  height: $nav-height;
+  width: $nav-height;
+}
+@media only screen and (max-width: $breakpoint) {
+  // Hamburger nav visible on mobile only
+  .nav_mobile {
+    display: block;
+  }
+  .menu {
+   width: 100%;
+    padding: $nav-height 0 0px;
+    .ul_list {
+      display: none;
+      .animation_li {
+        float: none;
+        .anchor_menu {
+          padding: 15px;
+          line-height: 20px;
+        }
+        .ul_list .animation_li .anchor_menu {
+          padding-left: 30px;
+        }
+
+      }
+    }
+  }
+  .nav_dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: $breakpoint) {
+  .nav_list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background:#000;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}

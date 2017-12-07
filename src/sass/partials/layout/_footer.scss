@@ -1,0 +1,30 @@
+.ul_footer {
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 1em;
+    padding-left: 0;
+    position: relative;
+    right: 30px;
+}
+.social {
+    list-style-type: none;
+    display: inline;
+    padding: 0.4em;
+}
+.copyright {
+    font: $font-family-base-light-weight 1em $font-family-base;
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 11px;
+}
+.logo_footer {
+    margin: 0 unset;
+    float: left;
+    margin-top: 4px;
+}
+@media only screen and (max-width: 500px){
+    .copyright {
+        font-size: 0.7em;
+    }
+}

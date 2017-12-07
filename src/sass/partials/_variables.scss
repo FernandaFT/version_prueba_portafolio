@@ -1,0 +1,46 @@
+// Fonts Variables
+$font-family-base: 'Raleway', sans-serif;
+
+$font-family-base-light-weight: 300;
+$font-family-base-regular-weight: 400;
+$font-family-base-medium-weight: 500;
+$font-family-base-bold-weight: 700;
+
+// Colors
+$primary-color-lightGreen:#D1EBE7;
+$secondary-color-lavernder:#EEE4F1;
+$terciary-color-lightGray:#F2F2F2;
+
+// menu responsivve
+$content-width: 1000px;
+$breakpoint: 800px;
+$nav-height: 81px;
+
+// fonts inside of proyect
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../font/Raleway-Bold.woff') format('woff');
+    font-weight: $font-family-base-bold-weight;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../font/Raleway-Medium.woff') format('woff');
+    font-weight: $font-family-base-medium-weight;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../font/Raleway-Regular.woff') format('woff');
+    font-weight: $font-family-base-regular-weight;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../font/Raleway-Light.woff') format('woff');
+    font-weight: $font-family-base-light-weight;
+    font-style: normal;
+}
